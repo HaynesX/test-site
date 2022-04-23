@@ -14,12 +14,18 @@ $(document).ready(function () {
 
 $(document).on('click', '.navbar-toggle', function () {
     $('#custom-collapse').toggleClass('in');
-    
-});
+    $('#custom-collapse').toggleClass('animation-js');
 
-// $(document).on('click', '.navbar-toggle', function () {
-//     setTimeout(function () { $('#custom-collapse').toggleClass('animation-js'); }, 1000);
-// });
+    if($('#custom-collapse').hasClass('in')){
+        setTimeout(() => {
+            $('#custom-collapse').removeClass('animation-js')
+        },1000)
+    }
+
+    else if (!$('#custom-collapse').hasClass('in')){
+        $('#custom-collapse').removeClass('animation-js')
+    }
+});
 
 $(".menu-item").click(function () {
     if ($(this).hasClass("open")) {

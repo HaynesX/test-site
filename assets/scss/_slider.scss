@@ -55,6 +55,10 @@
                 margin-bottom: 30px;
                 font-weight: 400;
 
+                @media (max-width: 667px) {
+                    letter-spacing: 2px;
+                }
+
                 &.last-text {
                     margin-bottom: 60px;
                 }
@@ -67,6 +71,15 @@
                 line-height: 1.4;
                 margin-bottom: 30px;
                 color: $white;
+
+                @media(max-width: 768px) {
+                    font-size: 38px;
+                }
+
+                @media (max-width: 667px) {
+                    letter-spacing: 10px;
+                    font-size: 30px;
+                }
             }
 
             .herobanner-text {

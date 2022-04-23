@@ -119,14 +119,13 @@
                 @media(max-width: 991px) {
                     transition: height .35s ease;
                     overflow: visible;
-                    display: block;
                     height: auto;
                 }
                 
             }
 
             &.animation-js {
-                height: 300px;
+                height: 281px;
             }
         }
 
